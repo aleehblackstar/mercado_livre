@@ -1,17 +1,48 @@
-# mercado_livre
+# 🛒 Mercado Livre Clone (Flutter)
 
-A new Flutter project.
+Aplicativo mobile desenvolvido em Flutter inspirado no Mercado Livre, com foco em listagem de produtos e carrinho de compras reativo utilizando MobX.
 
-## Getting Started
+## 📱 Funcionalidades
 
-This project is a starting point for a Flutter application.
+- 📦 Listagem de produtos
+- 🛒 Adição de produtos ao carrinho
+- 🔁 Atualização reativa da quantidade de itens no carrinho
+- 🚫 Validação de produto já adicionado (com feedback via SnackBar)
+- ⭐ Sistema de avaliação por estrelas (rating)
+- 🔍 Campo de busca (UI)
+- ⏳ Simulação de carregamento com CircularProgressIndicator
+- 🧺 Tela de carrinho de compras
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ Tecnologias utilizadas
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- MobX (gerenciamento de estado)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧠 Regras de negócio implementadas
+
+- O aplicativo exibe **15 produtos fixos**
+- O preço dos produtos aumenta progressivamente conforme o índice
+- Verificação de item duplicado no carrinho:
+  - Produto já adicionado → SnackBar vermelho
+  - Produto novo → SnackBar amarelo
+- Atualização automática da quantidade de itens no carrinho (reatividade com MobX)
+
+## 📸 Demonstração
+
+![Screenshot do Projeto](assets/images/screenshotTela.png)
+
+## ▶️ Como executar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/aleehblackstar/mercado_livre.git
+
+# Acesse a pasta
+cd mercado_livre
+
+# Instale as dependências
+flutter pub get
+
+# Execute o projeto
+flutter run
